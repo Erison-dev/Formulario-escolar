@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<style>
+    body{
+        background-color: #5f7c8a;
+    }
+    form{
+        background-color: white;
+        max-width: 500px; /*largura máxima*/
+        width: 70%;       /*largura*/
+        padding: 20px;    /*preenchimento*/
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    form{
+        text-align: center;
+        color: #5f7c8a;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    form input[type=text],
+    form input[type=email],
+    form input[type=serie],
+    form input[type=number]{
+        width: 90%;
+        height: 45%;
+        border: 3px solid #ccc;
+        padding-left: 14px;
+        margin: 10px 0;
+    }
+    form input[type=submit]{
+        width: 100%;
+        height: 40px; /*altura*/
+        cursor: pointer;
+        background:#5f7c8a;
+        color: white;
+        border: 0;
+        border-radius: 20px; /*raio de fronteira*/
+
+    }
+    form input[type=submit]:hover{
+        background-color: #3f8c9a;
+    }
+
+</style>
+
+<body>
+
+    <form class="grupo">
+        <fieldset>
+            <div class="campo">
+                <label for="Nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome...">
+            </div>
+            <div class="campo">
+                <label for="Sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Seu sobrenome...">
+            </div>
+                <div class="campo">
+                    <label for="Nome da Mae">Nome da Mae</label>
+                    <input type="text" name="nome da mae" id="nome da mae" placeholder="Nome da sua mãe...">
+                </div>
+            <div class="campo">
+                <label for="E-mail">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Seu E-mail...">
+            </div>
+            <div class="campo">
+                <label for="Telefone">Telefone</label>
+                <input type="number" name="telefone" id="telefone" placeholder="Seu número de telefone...">
+            </div>
+            <div class="campo">
+                <label for="CPF">CPF</label>
+                <input type="number" name="cpf" id="cpf" placeholder="Seu número do CPF...">
+            </div>
+            <div class="campo">
+                <label for="Matricula">Matricula</label>
+                <input type="number" name="matricula" id="matricula" placeholder="Seu número da matricula...">
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="turno" value="manha">Manha
+                </label>
+                <label>
+                    <input type="radio" name="turno" value="tarde">Tarde
+                </label>
+                <label>
+                    <input type="radio" name="turno" value="noite">Noite
+                </label>
+            </div>
+            
+        <input type="submit" name="açao" value="Enviar">
+    </form>
+    
+</body>
+</html>
